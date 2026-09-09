@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InterCulture UZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="site">
+    <header class="header">
+        <a class="brand" href="#" aria-label="InterCulture UZ home">
+            <img class="brand__mark" src="img/logo.png" alt="">
+            <span class="brand__copy"><strong>InterCulture UZ</strong><small>Intercultural Communication Competence<br>Assessment</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <nav class="nav" aria-label="Main navigation">
+            <a class="nav__link nav__link--active" href="#">Home</a>
+            <a class="nav__link" href="#about-icc" data-modal="about">About ICC</a>
+            <a class="nav__link" href="#how-it-works" data-modal="how">How It Works</a>
+            <a class="nav__link" href="#help" data-modal="help">Help</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="about">
+        <p class="hero__eyebrow">Welcome to</p>
+        <h1>InterCulture UZ</h1>
+        <div class="ornament" aria-hidden="true"><span></span><i>◇</i><span></span></div>
+        <p class="hero__subtitle">Discover, understand and communicate<br>across cultures</p>
+    </section>
+
+    <section class="journeys" id="journeys" aria-label="Choose a culture">
+        <article class="culture-card culture-card--uz">
+            <div class="culture-card__flag" role="img" aria-label="Flag of Uzbekistan">🇺🇿</div>
+            <h2>UZBEKISTAN</h2><p>Explore Uzbek culture,<br>traditions and communication.</p>
+            <a class="journey-button journey-button--green" href="#uzbekistan" data-country="uzbekistan">Start Journey <span>→</span></a>
+        </article>
+        <article class="culture-card culture-card--uk">
+            <div class="culture-card__flag" role="img" aria-label="Flag of Britain">🇬🇧</div>
+            <h2>BRITAIN</h2><p>Discover British culture,<br>values and communication.</p>
+            <a class="journey-button journey-button--blue" href="#britain" data-country="britain">Start Journey <span>→</span></a>
+        </article>
+        <article class="culture-card culture-card--usa">
+            <div class="culture-card__flag" role="img" aria-label="Flag of USA">🇺🇸</div>
+            <h2>USA</h2><p>Explore American culture,<br>diversity and communication.</p>
+            <a class="journey-button journey-button--red" href="#usa" data-country="usa">Start Journey <span>→</span></a>
+        </article>
+    </section>
+
+    <section class="benefits" aria-label="Benefits">
+        <div class="benefit"><b aria-hidden="true">◎</b><span><strong>Learn</strong><small>about cultures</small></span></div>
+        <div class="benefit"><b aria-hidden="true">♧</b><span><strong>Understand</strong><small>different perspectives</small></span></div>
+        <div class="benefit"><b aria-hidden="true">◌</b><span><strong>Communicate</strong><small>with respect</small></span></div>
+        <div class="benefit"><b aria-hidden="true">✥</b><span><strong>Connect</strong><small>with the world</small></span></div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer__line"></div><img src="img/logo.png" alt="">
+        <p>Designed &amp; Developed by<br><em>Qurbonova F.M.</em></p><div class="footer__line"></div>
+    </footer>
+</main>
+
+<section class="country-view" aria-label="Country journey" aria-hidden="true">
+    <header class="country-header">
+        <button class="country-view__back" type="button" aria-label="Back to home">←</button>
+        <a class="country-brand" href="#" aria-label="Back to InterCulture UZ home">
+            <img src="img/logo.png" alt="">
+            <span><strong>InterCulture UZ</strong><small>Intercultural Communication Competence<br>Assessment</small></span>
+        </a>
+        <nav class="country-tabs" aria-label="Country navigation">
+            <button class="is-active" type="button">Text</button>
+            <button type="button">Vocabulary</button>
+            <button type="button">Test</button>
+            <button type="button">Assessment</button>
+        </nav>
+    </header>
+    <div class="country-hero">
+        <h1></h1>
+        <div class="country-ornament" aria-hidden="true"><span></span><i>◇</i><span></span></div>
+        <p>Discover, understand and communicate<br>across cultures</p>
+    </div>
+    <section class="lesson-panel" aria-live="polite" hidden>
+        <button class="lesson-panel__close" type="button" aria-label="Close section">×</button>
+        <div class="lesson-panel__content"></div>
+    </section>
+    <nav class="country-actions" aria-label="Journey sections">
+        <button type="button" data-section="text"><b>▣</b><span><strong>TEXT</strong><small>Read and learn</small></span><i>›</i></button>
+        <button type="button" data-section="vocabulary"><b>Aa</b><span><strong>VOCABULARY</strong><small>Learn key words</small></span><i>›</i></button>
+        <button type="button" data-section="test"><b>☷</b><span><strong>TEST</strong><small>Check your understanding</small></span><i>›</i></button>
+        <button type="button" data-section="assessment"><b>⌁</b><span><strong>ASSESSMENT</strong><small>See your result</small></span><i>›</i></button>
+    </nav>
+    <footer class="country-footer"><span></span><p>Designed &amp; Developed by<br><em>Qurbonova F.M.</em></p><span></span></footer>
+</section>
+
+<div class="info-modal" role="dialog" aria-modal="true" aria-labelledby="info-modal-title" hidden>
+    <div class="info-modal__backdrop" data-modal-close></div>
+    <article class="info-modal__card">
+        <button class="info-modal__close" type="button" aria-label="Close information" data-modal-close>×</button>
+        <div class="info-modal__icon" aria-hidden="true"></div>
+        <h2 id="info-modal-title"></h2>
+        <div class="info-modal__body"></div>
+        <button class="info-modal__button" type="button" data-modal-close>GOT IT</button>
+    </article>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
